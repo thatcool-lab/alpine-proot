@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>alpine-proot — Termux repo</title>
+<style>
+  body { font-family: monospace; background:#111; color:#ddd; padding:2rem; max-width:800px; margin:auto; }
+  h1 { color:#7fd; }
+  code, pre { background:#222; padding:.2rem .4rem; border-radius:4px; }
+  pre { padding:1rem; overflow:auto; }
+  a { color:#8cf; }
+  ul { line-height:1.8; }
+</style>
+</head>
+<body>
+<h1>alpine-proot</h1>
+<p>Alpine Linux в Termux через proot (aarch64).</p>
+
+<h2>Установка</h2>
+<pre>echo "deb [trusted=yes] https://thatcool-lab.github.io/alpine-proot/ ./" &gt; $PREFIX/etc/apt/sources.list.d/alpine-proot.list
+pkg update
+pkg install alpine-proot
+alpine</pre>
+
+<h2>Файлы</h2>
+<ul>
+  <li><a href="Packages">Packages</a> — индекс пакетов</li>
+  <li><a href="Packages.gz">Packages.gz</a> — сжатый индекс</li>
+  <li><a href="alpine-proot_1.0_aarch64.deb">alpine-proot_1.0_aarch64.deb</a> — сам пакет</li>
+</ul>
+
+<h2>Ручная установка</h2>
+<pre>curl -LO https://thatcool-lab.github.io/alpine-proot/alpine-proot_1.0_aarch64.deb
+dpkg -i alpine-proot_1.0_aarch64.deb</pre>
+</body>
+</html>
